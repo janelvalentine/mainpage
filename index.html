@@ -1,0 +1,90 @@
+<!--
+Requirements
+[  ] Google Font OR Uploaded Font
+[  ] font-size OR font-style 
+[  ] Five CSS Rules
+[  ] Three Images
+
+Select ONE Additional Feature to Add  
+[ no ] Feature 1 - Include a Static Background Image
+[ no ] Feature 2 - Use a unique border-radius
+[ no ] Feature 3 - Use width and margin CSS Properties
+[ no ] Feature 4 - Include at least one more additional HTML page
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Paprika&display=swap" rel="stylesheet">
+    <title>Unit 4 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: pageslol;
+        src: url("https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/VerilySerifMono.otf?v=1730913409157");
+      }
+      body {
+        background-color: black;   
+      }
+      img {
+        margin: 25px 10px 10px 100px; object-fit: cover;
+      }
+
+      #move {
+        background-color: none;
+        text-align: right;
+        margin-right: 20%;
+      }
+
+      #main {
+        display: flex;
+        justify-content: center;
+      
+      }
+    
+      .name {
+        font-size: 60px;
+         font-family: "Libre Caslon Display", serif;
+        color: white; 
+      }
+      .pages {
+        font-size: 40px;
+        font-famly: pageslol;
+          font-family: "Libre Caslon Display", serif;
+         color: white; 
+      }
+      .menu:hover{
+        color: rgb(214,122,222);
+      }
+      a {color: white; text-decoration:none }
+    </style>
+  </head>
+  <body>
+  
+    <br />
+
+    <hr size="30" color="#ef9ad4" />
+    <div id="main">
+      <img
+        src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/IMG_6801.PNG?v=1730906266721"
+        width="600"
+      />
+
+      <div id="text">
+        <h1 class="name">JANEL<br />VALENTINE</h1>
+        <p class="pages">
+        <span class="menu">About Me</span><br />
+          <span class= "menu"> <a class= "menu" href= "commissions.html" >Commission</a> </span> <br />
+          <span class="menu"> <a class="menu" href="artwork.html">Artwork</a></span> <br />
+          <span class= "menu"> Contact</span> <br />
+        </p>
+      </div>
+    </div>
+    
+  </body>
+</html>

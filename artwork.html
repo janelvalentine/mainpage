@@ -20,8 +20,11 @@
         /*          font-family:pageslol, serif; */
         font-family: "Libre Caslon Display", serif;
       }
-      
-       h1:hover {
+
+      h1:hover {
+        color: rgb(214, 122, 222);
+      }
+      h2:hover {
         color: rgb(214, 122, 222);
       }
       body {
@@ -29,365 +32,543 @@
         color: white;
       }
 
-      .flip-card {
-        background-color: black;
-        width: 316px;
-        height: 350px;
-        perspective: 1000px;
+      .topnav {
+        overflow: hidden;
+        background-color: #ef9ad4;
       }
 
-      .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
+      .topnav a {
+        float: left;
+        color: white;
         text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
       }
 
-      .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
+      .topnav a:hover {
+        background-color: #fabef5;
+        color: black;
       }
 
-      .flip-card-front,
-      .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-
-      .flip-card-front {
+      .topnav a.active {
         background-color: black;
-        color: black;
+        color: white;
       }
 
-      .flip-card-back {
-        background-color: #828384;
-        color: black;
-        transform: rotateY(180deg);
+      ul {
+        list-style-type: none;
+        margin: 70;
+        padding: 0;
+        width: 10%;
+        background-color: black;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
       }
-      .line {
+
+      li a {
+        display: block;
+        color: white;
+        padding: 8px 30px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: #fabef5;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #fabef5;
+        color: white;
+      }
+      .sidenav {
+        width: 100px;
+      }
+      .artlayout {
         display: flex;
-        justify-content: space-around;
-        width: 100%;
+        justify-content: center;
+        margin-left: 15%;
       }
-              .topnav {
-  overflow: hidden;
-  background-color: #ef9ad4;
-}
+      .spaceb {
+        margin-left: 60px;
+        margin-right: 30%;
+        width: 30%;
+      }
 
-.topnav a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #fabef5;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: black;
-  color: white;
-}
+      img {
+        object-fit: contain;
+      }
     </style>
   </head>
   <body>
-           <br><br>
-   <div class="topnav">
- 
- <a href="index.html">ABOUT ME</a>
-  <a  href= "commissions.html" >COMMISSION</a>
-  <a class="active" href="artwork.html">ARTWORK</a>
-   <a href="contact.html">CONTACT</a>
-</div>
+    <div class="topnav">
+      <a href="index.html">ABOUT ME</a>
+      <a href="commissions.html">COMMISSION</a>
+      <a class="active" href="artwork.html">ARTWORK</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
     <center>
       <h1 class="heading"><em>ARTWORK</em></h1>
     </center>
-    <div class="line">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img
-              src="https://cdn.glitch.global/33c5a76a-6432-44d1-adc2-5d752ec569c3/realities.JPG?v=1732208657036"
-              alt="painting"
-              style="
-                width: 200px;
-                height: 320px;
-                margin-top: 15px;
-                object-fit: contain;
-              "
-            />
-          </div>
-          <div class="flip-card-back">
-            <h1>REALITIES</h1>
-            <p>Oil Paint/ 5ft x 2ft</p>
-            <p>
-              This painting is a reflection of me being reflected multiple
-              times. Its about how I act when I'm around different people. How I
-              tend to be more friendly with people i just met. Or I am more shy
-              when it comes to distant family members. The black clothing
-              represnts dominance. To show I am grounded. I am in control of
-              what I show people.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img
-              src="https://cdn.glitch.global/33c5a76a-6432-44d1-adc2-5d752ec569c3/Jack.n.box.JPG?v=1732208676143"
-              alt="painting"
-              style="
-                width: 316 px;
-                height: 320px;
-                margin-top: 15px;
-                object-fit: contain;
-              "
-            />
-          </div>
-          <div class="flip-card-back">
-            <h1>Memory in a Box</h1>
-            <p>Oil Paint/ 23in x 19in</p>
-            <p>
-              This painting is a self portrait conveying the feeling of
-              forgetting childhood. The older you get the little things like
-              childhood friends and TV shows are often forgotten. Here I have
-              forgotten my childhood Monkey. He is jumping out at me like a jack
-              in a box, However I'm not surprised in this painting. I had
-              forgotten the significance he had in my childhood.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img
-              src="https://cdn.glitch.global/33c5a76a-6432-44d1-adc2-5d752ec569c3/IMG_6228.jpg?v=1732208686847"
-              alt="Drawing"
-              style="
-                width: 300px;
-                height: 320px;
-                margin-top: 15px;
-                object-fit: contain;
-              "
-            />
-          </div>
-          <div class="flip-card-back">
-            <h1>4th wall</h1>
-            <p>Graphite/16in x 11in</p>
-            <p>
-              This drawing is about being trapped in my mind and a space.
-              Sometimes life can feel repetitive. Waking up and going to school,
-              work then home. Being drained of energy. I think of ways of how I
-              can get out of this show I call my life right now. How I can try
-              and change something so its not the same as yesterday. Thinking of
-              ways I can benefit my career starting at this age. My knuckle is
-              only peeking out a bit only for the simple fact that I am close to
-              being out. Out of my head, Out of the repetition of the days.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img
-              src="https://cdn.glitch.global/33c5a76a-6432-44d1-adc2-5d752ec569c3/desire%2BEJ.JPG?v=1732208694652"
-              alt="painting"
-              style="
-                width: 300px;
-                height: 320px;
-                margin-top: 15px;
-                object-fit: contain;
-              "
-            />
-          </div>
-          <div class="flip-card-back">
-            <h1>Tipsy</h1>
-            <p>Oil Paint/17in x 24in</p>
-            <p>
-              This is based on the feeling of alcohol. the colors and
-              environment tend to be fused together. That's why I made the color
-              palette somewhat cohesive. The background has a see through feel
-              to it and the movement of the pink shade through the background to
-              the foreground.
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class="artmenu">
+      <ul class="sidenav">
+        <li><a class="active" id="a2025">2025</a></li>
+        <li><a id="a2024">2024</a></li>
+        <li><a id="a2023">2023</a></li>
+        <li><a id="a2022">2022</a></li>
+      </ul>
+    </div>
 
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img
-              src="https://cdn.glitch.global/33c5a76a-6432-44d1-adc2-5d752ec569c3/missing%20monkey.PNG?v=1732294518970"
-              alt="Mix Media"
-              style="
-                width: 300px;
-                height: 320px;
-                margin-top: 15px;
-                object-fit: contain;
-              "
-            />
-          </div>
-          <div class="flip-card-back">
-            <h1>Missing Poster</h1>
-            <p>water color /17in x 24in</p>
-            <p>
-              Monkey was a childhood stuffed monkey of mines. He was very
-              important to my childhood and is a key part of who I am today.
-              This is the story of how I lost him. I created this in the mindset
-              of 6 year old me. wishing I had created a missing Poster for him.
-              Maybe I could have gotten him back. However he is now safe in my
-              thoughts and heart.
-            </p>
-          </div>
+    <div class="art2025">
+      <div class="artlayout">
+        <img
+          src=" https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/IMG_0272.PNG?v=1742225792908"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Flowers of Betrayal <br />
+            19in x 15in<br />
+            Oil paint<br />
+            2025<br />
+          </h2>
+          <br />
+          <p>Flower Still Life</p>
+        </div>
+      </div>
+      <!--       </div> -->
+
+      <br />
+      <br />
+      <br />
+
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/thumbnails%2FValentine_Janel_2%20(1).jpg?1748881717633"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            18th Floor <br />
+            36in x 24in<br />
+            Oil paint<br />
+            2025<br />
+          </h2>
+          <br />
+          <p>
+            Being controlled comes from being a kid. That's how we learned what
+            was right from wrong, How we learned our manners. When your a
+            teenager, we feel entitled to not being a kid anymore. So our
+            parents let us free to learn from our mistakes. For me, My mom still
+            feels she need to make decisions for me. In this painting i am
+            walking into an elevator with no space but me. The hands are
+            signifying my parents and family member still trying to grasp me. I
+            am confident purple with its significance of royalty. I am ready to
+            take on the world and get older.
+          </p>
         </div>
       </div>
     </div>
     <br />
-    <div class="line">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img
-              src="https://cdn.glitch.global/33c5a76a-6432-44d1-adc2-5d752ec569c3/ladybug.JPG?v=1732208711425"
-              alt="painting"
-              style="
-                width: 200px;
-                height: 320px;
-                margin-top: 15px;
-                object-fit: contain;
-              "
-            />
-          </div>
-          <div class="flip-card-back">
-            <h1>Coccinellidaephobia (fear of ladybugs)</h1>
-            <p>Oil Paint/ 19in x 15in</p>
-            <p>
-              People usually don't take fears of bugs seriously. I used to be
-              one of those people. Until I realized I'm afraid of ladybugs
-              myself. It's such a little thing but a huge thing to me. In this
-              painting I am laying down in the grass. Ladybugs tend to crawl on
-              anything and everything. So I have a couple tangled in my curls
-              and on my face as well. Most of the time when I see ladybugs I
-              don't Freak out. Which is why I don't look frightened in the pose
-              more uncomfortable
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img
-              src="https://cdn.glitch.global/33c5a76a-6432-44d1-adc2-5d752ec569c3/flower%20.JPG?v=1732208717396"
-              alt="painting"
-              style="
-                width: 300px;
-                height: 320px;
-                margin-top: 15px;
-                object-fit: contain;
-              "
-            />
-          </div>
-          <div class="flip-card-back">
-            <h1>Flor De Maga</h1>
-            <p>Oil Paint/ 23in x 30in</p>
-            <p>
-              This flower is called Flor de Maga. This is also the Puerto Rican
-              national flower. What's jumping out of it isn't just a flog. This
-              is called a Coqui; Another Puerto Rico National animal. These
-              together is like an omega of Puerto Rico, which is what I wanted
-              to show. This is my culture and a big part of my identity. Black
-              in my culture is equal to dominance. In this painting it means the
-              same thing. Of how strong I am attracted to my nationality.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img
-              src="https://cdn.glitch.global/33c5a76a-6432-44d1-adc2-5d752ec569c3/lino%20self%20portrait.JPG?v=1732208730798"
-              alt="Lino Print"
-              style="
-                width: 300px;
-                height: 320px;
-                margin-top: 15px;
-                object-fit: contain;
-              "
-            />
-          </div>
-          <div class="flip-card-back">
-            <h1>Self Portrait</h1>
-            <p>Lino Print/9in x 11in</p>
-            <p>A Self portrait</p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img
-              src="https://cdn.glitch.global/33c5a76a-6432-44d1-adc2-5d752ec569c3/etching.JPG?v=1732208748824"
-              alt="Intaglio print"
-              style="
-                width: 300px;
-                height: 320px;
-                margin-top: 15px;
-                object-fit: contain;
-              "
-            />
-          </div>
-          <div class="flip-card-back">
-            <h1>SAY CHEESE</h1>
-            <p>intaglio/8in x 6in</p>
-            <p>
-              A moment between me and my twin sister at age 5. Me and her had
-              our differences but our curls were never one of them.
-            </p>
-          </div>
-        </div>
-      </div>
+    <br />
+    <br />
 
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img
-              src="https://cdn.glitch.global/33c5a76a-6432-44d1-adc2-5d752ec569c3/IMG_6057.JPG?v=1732208757252"
-              alt="Lino Print"
-              style="width: 300px; height: 320px; margin-top: 15px"
-            />
-          </div>
-          <div class="flip-card-back">
-            <h1>COQUI</h1>
-            <p>Lino Print /12in x 12in</p>
-            <p>
-              Puerto Rico's national animal is a Coqui frog. It's called Coqui
-              because its the sound it makes. "Coqui" "Coqui" "Coqui." If you
-              was to ever roam the street of Puerto Rico at night or happen to
-              be in their forest. You will hear it. It's rare to actually see
-              one, and even hold one. When you catch one or appear to be in your
-              hand it means luck. They are small creatures in the forest
-              blending in with its tan skin. I used Lino Print to create this
-              piece because I needed to convey the details in my hands and how
-              much focus should go toward actually seeing a Coqui.
-            </p>
-          </div>
+    <div class="art2024">
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/REALITIES%20(1).JPG?v=1748622718670"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Realities <br />
+            60in x 24in<br />
+            Oil paint<br />
+            2024<br />
+          </h2>
+          <br />
+          <p>
+            This painting is a reflection of me being reflected multiple times.
+            It's about how I act when I'm around different people. How I tend to
+            be more friendly with people i just met. Or I am more shy when it
+            comes to distant family members. I am wearing black in the main
+            reflection to show dominance in the fact that no matter what version
+            or how I am acting in any situation, it's my face, it is me. I am
+            dominating my body. When they all add up it all equals to me. I am
+            also barefooted for that exact reason. To show I am grounded . I am
+            in control of what I show people.
+          </p>
+        </div>
+      </div>
+      <!--       </div> -->
+
+      <br />
+      <br />
+      <br />
+
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/memorybox.jpg?v=1748881449739"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Memories <br />
+            19in x 23in<br />
+            Oil paint<br />
+            2024<br />
+          </h2>
+          <br />
+          <p>
+            This painting is a self portrait conveying the feeling of forgetting
+            childhood. The older you get the little things like childhood
+            friends and TV shows are often forgotten. Here I have forgotten my
+            childhood Monkey. He was so dear to me, more like a Best friend than
+            just a bear. He is jumping out at me like a jack in a box, However
+            I'm not surprised in this painting. I had forgotten the significance
+            he had in my childhood. The light focuses on him because he was
+            important to me at a time in my life. And up until I lost him I
+            couldn't be without him.
+          </p>
+        </div>
+      </div>
+      <!--       </div> -->
+
+      <br />
+      <br />
+      <br />
+
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/Copy%20of%20Natural_Habitat%20(1).JPG?v=17489685303603"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Natural Habitat<br />
+            19in x 15in<br />
+            Oil paint<br />
+            2024<br />
+          </h2>
+          <br />
+          <p>
+            In a few of my paintings Monkey features in. In my mind his story
+            would live forever. Here he finally makes it back to where he
+            belongs. In the forest. Although he is a stuffed Monkey he feels
+            real to me. Therefore he is hanging from a real tree in a real
+            forest. The pink highlights are for the surrealist feel along with
+            the red trees.
+          </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/Open%20Arms%20.JPG?v=1748969222825"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Open Arms <br />
+            30in x 20in<br />
+            Oil pastel, watercolor, and color pencil<br />
+            2024<br />
+          </h2>
+          <br />
+          <p>
+            A moment when childhood and connects with now. When getting older
+            you tend to realize how much you miss your childhood self. When I
+            was younger I was constantly thinking about the future. This artwork
+            is portrayed with bright colors and an imagined dream-like feel of a
+            sunset. Two suns for two lives with bright futures. The shadow
+            figures show how eager younger me is to see older me.
+          </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/Copy%20of%20COQUI.JPG?v=1749486139108"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Coqui <br />
+            12in x 12in<br />
+            Linoleum Printmaking<br />
+            2024<br />
+          </h2>
+          <br />
+          <p>
+            Puerto Rico's national animal is a Coqui frog. It's called Coqui
+            because it's the sound it makes. "Coqui" "Coqui" "Coqui." If you was
+            to ever roam the streets of Puerto Rico at night or happen to be in
+            their forest. You will hear it. It's rare to actually see one, and
+            even hold one. When you catch one or appear to be in your hand it
+            means luck. They are small creatures in the forest blending in with
+            its tan skin. I used Lino Print to create this piece because I
+            needed to convey the details in the hands and how much focus should
+            go toward actually seeing a Coqui.
+          </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/Copy%20of%20The%204th%20Wall%20is%20meant%20to%20be%20broken.jpg?v=1749486148093"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            4th wall is to be broken <br />
+            16in x 9in<br />
+            Graphite<br />
+            2024<br />
+          </h2>
+          <br />
+          <p>
+            This drawing is about being trapped in my mind and a space.
+            Sometimes life can feel repetitive. Waking up and going to school,
+            work then home. Being drained of energy. Walking into the same
+            Projects I call home everyday. Past the group of men that try to
+            talk to 17 year old me. I think of ways of how I can get out of this
+            show I call my life right now. How I can try and change something so
+            it's not the same as yesterday. Thinking of ways I can benefit my
+            career starting at this age. So when I think where I am 10 years
+            from now it's not in the same Projects I dreamed of getting out of.
+            My knuckle is only peeking out a bit only for the simple fact that I
+            am close to being out. Out of my head, Out of the repetition of the
+            days, Out of the Projects I was born and raised in.
+          </p>
         </div>
       </div>
     </div>
+    <div class="art2023">
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/Valentine_Janel_3.jpg?v=1749486953000"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Flor de Maga <br />
+            30in x 23in<br />
+            Oil paint<br />
+            2023<br />
+          </h2>
+          <br />
+          <p>
+            This flower is called Flor de Maga. This is also the Puerto Rican
+            national flower. What's jumping out of it isn't just a flog. This is
+            called a Coqui; Another Puerto Rico National animal. These together
+            are like an omega of Puerto Rico, which is what I wanted to show.
+            This is my culture and a big part of my identity. Black in my
+            culture is equal to dominance. In this painting it means the same
+            thing. Of how strong I am attracted to my nationality.
+          </p>
+        </div>
+      </div>
+      <!--       </div> -->
+
+      <br />
+      <br />
+      <br />
+
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/Printmaking%20self-portrait.png?v=1749486947192"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Self Portrait<br />
+            11in x 9in<br />
+            Linoleum Printmaking<br />
+            2023<br />
+          </h2>
+          <br />
+          <p>Self portrait. Showing skill and technique for printmaking.</p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/Tipsy.JPG?v=1749486941348"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Tipsy <br />
+            24in x 17in<br />
+            Oil Paint<br />
+            2023<br />
+          </h2>
+          <br />
+          <p>
+            This is based on the feeling of alcohol. the colors and environment
+            tend to be fused together. That's why I made the color palette
+            somewhat cohesive. The background has a see through feel to it and
+            the movement of the pink shade through the background to the
+            foreground.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="art2022">
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/Coccinellidaephobia%20(fear%20of%20ladybugs).JPG?v=1749490192279"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Coccinellidaephobia (fear of ladybugs)<br />
+            19in x 15in<br />
+            Acrylic Paint<br />
+            2022<br />
+          </h2>
+          <br />
+          <p>
+            People usually don't take fears of bugs seriously. I used to be one
+            of those people. Until I realized I'm afraid of ladybugs myself.
+            It's such a little thing but a huge thing to me. I sometimes catch
+            myself staring at them not knowing what to do or how to handle them.
+            I usually find them when I'm at the park. In this painting I am
+            laying down in the grass. Ladybugs tend to crawl on anything and
+            everything. So I have a couple tangled in my curls and on my face as
+            well. Most of the time when I see ladybugs I don't Freak out. Which
+            is why I don't look frightened in the pose more uncomfortable
+          </p>
+        </div>
+      </div>
+      <!--       </div> -->
+
+      <br />
+      <br />
+      <br />
+
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/Say%20cheese.JPG?v=1749490191462"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Say Cheese<br />
+            8in x 6in<br />
+            Intaglio Printmaking<br />
+            2022<br />
+          </h2>
+          <br />
+          <p>
+            A moment between me and my twin sister at age 5. Me and her had our
+            differences but our curls were never one of them.
+          </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="artlayout">
+        <img
+          src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/MISSING_POSTER.JPG?v=1749490218753"
+          width="400px"
+        />
+
+        <div class="spaceb">
+          <h2>
+            Missing Monkey <br />
+            14in x 11in<br />
+            Mix media, color pencil, watercolor<br />
+            2022<br />
+          </h2>
+          <br />
+          <p>
+            Monkey was a childhood stuffed monkey of mine. He was very important
+            to my childhood and is a key part of who I am today. This is the
+            story of how I lost him. I created this in the mindset of 6 year old
+            me. wishing I had created a missing Poster for him. Maybe I could
+            have gotten him back. However he is now safe in my thoughts and
+            heart.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $("#a2025").click(function () {
+        $("#a2025").addClass("active");
+        $("#a2024").removeClass("active");
+        $("#a2023").removeClass("active");
+        $("#a2022").removeClass("active");
+        $(".art2024").hide();
+        $(".art2023").hide();
+        $(".art2022").hide();
+        $(".art2025").show(2000);
+      });
+      $("#a2024").click(function () {
+        $("#a2024").addClass("active");
+        $("#a2025").removeClass("active");
+        $("#a2023").removeClass("active");
+        $("#a2022").removeClass("active");
+        $(".art2025").hide();
+        $(".art2023").hide();
+        $(".art2022").hide();
+        $(".art2024").show(2000);
+      });
+      $("#a2023").click(function () {
+        $("#a2023").addClass("active");
+        $("#a2025").removeClass("active");
+        $("#a2024").removeClass("active");
+        $("#a2022").removeClass("active");
+        $(".art2025").hide();
+        $(".art2024").hide();
+        $(".art2022").hide();
+        $(".art2023").show(2000);
+      });
+      $("#a2022").click(function () {
+        $("#a2022").addClass("active");
+        $("#a2025").removeClass("active");
+        $("#a2024").removeClass("active");
+        $("#a2023").removeClass("active");
+        $(".art2025").hide();
+        $(".art2024").hide();
+        $(".art2023").hide();
+        $(".art2022").show(2000);
+      });
+    </script>
   </body>
 </html>
